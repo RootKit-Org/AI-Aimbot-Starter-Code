@@ -2,7 +2,7 @@
 
 [![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
-# ✨ Make sure you have the Launcher before starting ✨✨
+# ✨Make sure you have the Launcher before starting✨
 Download our [AI Aimbot Launcher](https://github.com/RootKit-Org/Launcher). It is FREE. **No coding required.**
 
 ## Pros
@@ -16,6 +16,13 @@ Using the starter kit is the best way to make your own bot. This is the way you 
 
 ## Cons
 - You have to learn how to use an API/SDK
+
+## What's in the box?
+We included 2 different examples for you.
+
+- A bare example which has the bare minimum for most projects you would want to start.
+
+- An example using the Open Source Aimbot
 
 ## Running
 Place main.py anywhere. To run it, the syntax is 
