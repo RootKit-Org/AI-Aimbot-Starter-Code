@@ -1,35 +1,52 @@
-# Set up
-Move the customCode folder into your `%appdata%\ai-aimbot-launcher`. You should then have `%appdata%\ai-aimbot-launcher\customCode\example`
+![World's Best AI Aimbot Banner](imgs/banner.png)
 
-You can rename the `example` folder and the name of the main file.
+[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
-# Running
+# ✨ Make sure you have the Launcher before starting ✨✨
+Download our [AI Aimbot Launcher](https://github.com/RootKit-Org/Launcher). It is FREE. **No coding required.**
+
+## Pros
+Using the starter kit is the best way to make your own bot. This is the way you have to submit code to us for competitions to start with. here are more reasons.
+- Offical Competitive Standard
+- Access to models in Store
+- Models will be auto converted for you
+- Setting profiles can be used in your code
+- You can publish your code on our store
+- Everyone has the launcher
+
+## Cons
+- You have to learn how to use an API/SDK
+
+## Running
 Place main.py anywhere. To run it, the syntax is 
 `python main.py <settingsProfile> <yoloVersion> <modelFileName> <customCode>`
 
 Treat it as if you were gonna import your code. Here is an example of what it would look like.
 `python main.py mySettings 5 test.pt example.myCode`
 
+## Deploying
+Move your custom code folder into `%APPDATA%\ai-aimbot-launcher\customCode`.
 
+If you want to post it on the store, `@Techincal Champions` in the discord.
 
-# Your function
-## Sent data
+## Starter Function
+### What the Launcher Sends you
 ```python
 version: int # 0-2 (pytorch, onnx, engine)
-settingsProfile: str # file name of settings which will be located at %appdata%\ai-aimbot-launcher\aimbotSettings
-paidTier: int # 0 - free, 1+ paid
+settingsProfile: str # file name of settings located in %APPDATA%\ai-aimbot-launcher\aimbotSettings
+paidTier: int # 0-3 (free, supporter t1, t2, t3)
 yoloVersion: int # 5 or 8 (yolov5 or yolov8)
-modelfileName: str # model file name that can be found at %appdata%\ai-aimbot-launcher\models
+modelfileName: str # file name of model located in %APPDATA%\ai-aimbot-launcher\models
 ```
 
-## Example 1
+### Example 1
 ```python
 def main(**argv):
     print("My custom bot")
     print(argv)
 ```
 
-## Example 2
+### Example 2
 ```python
 def main(
     version,
@@ -39,4 +56,30 @@ def main(
     modelFileName
     ):
     print("My custom bot")
+```
+
+### Example 3
+```python
+from .schema.settings import Settings # Include the schema folder
+import json
+import os
+
+def main(
+    version: int = 0,
+    settingsProfile: str = "",
+    paidTier: int = 0,
+    yoloVersion: int = 0,
+    modelFileName: str = ""
+    ):
+
+    appdataLocation = os.getenv("APPDATA")
+    settingsPath = os.path.join(appdataLocation, "ai-aimbot-launcher", "aimbotSettings", f"{settingsProfile.lower()}.json")
+
+    # loading settings
+    with open(settingsPath, "r") as f:
+        settings = json.load(f)
+        settings = Settings(**settings)
+
+    # getting model path
+    modelPath = os.path.join(appdataLocation, "ai-aimbot-launcher", "models", modelFileName)
 ```
