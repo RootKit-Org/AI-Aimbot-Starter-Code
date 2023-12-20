@@ -29,7 +29,7 @@ Place main.py anywhere. To run it, the syntax is
 `python main.py <settingsProfile> <yoloVersion> <modelFileName> <customCode>`
 
 Treat it as if you were gonna import your code. Here is an example of what it would look like.
-`python main.py mySettings 5 test.pt example.myCode`
+`python main.py Default 5 v5_base_s.pt example_bare.main`
 
 ## Deploying
 Move your custom code folder into `%APPDATA%\ai-aimbot-launcher\customCode`.
