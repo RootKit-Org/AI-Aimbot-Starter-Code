@@ -5,6 +5,8 @@
 # ✨Make sure you have the Launcher before starting✨
 Download the [RootKit Launcher](https://github.com/RootKit-Org/Launcher). It is FREE. **No coding required.**
 
+Over 1,510 users use the launcher
+
 ## Pros
 Using the starter kit is the best way to make your own bot. This is the way you have to submit code to us for competitions to start with. here are more reasons.
 - Offical Competitive Standard
@@ -12,7 +14,7 @@ Using the starter kit is the best way to make your own bot. This is the way you 
 - Models will be auto converted for you
 - Setting profiles can be used in your code
 - You can publish your code on our store
-- Everyone has the launcher (Over 1,400 users)
+- Everyone has the launcher (Over 1,510 users)
 
 ## Cons
 - You have to learn how to use an API/SDK
