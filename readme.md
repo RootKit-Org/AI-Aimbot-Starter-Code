@@ -14,7 +14,7 @@ Using the starter kit is the best way to make your own bot. This is the way you 
 - Models will be auto converted for you
 - Setting profiles can be used in your code
 - You can publish your code on our store
-- Everyone has the launcher (Over 1,700 users)
+- Everyone has the launcher (Over 2,100 users)
 
 ## Cons
 - You have to learn how to use an API/SDK
