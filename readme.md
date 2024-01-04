@@ -3,7 +3,7 @@
 [![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
 # ✨Make sure you have the Launcher before starting✨
-### Over 2,700 users use the launcher
+### Over 3,100 users use the launcher
 
 Download the [RootKit Launcher](https://github.com/RootKit-Org/Launcher). It is FREE. **No coding required.**
 
@@ -14,7 +14,7 @@ Using the starter kit is the best way to make your own bot. This is the way you 
 - Models will be auto converted for you
 - Setting profiles can be used in your code
 - You can publish your code on our store
-- Everyone has the launcher (Over 2,700 users)
+- Everyone has the launcher (Over 3,100 users)
 
 ## Cons
 - You have to learn how to use an API/SDK
