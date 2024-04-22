@@ -3,7 +3,7 @@
 [![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
 # ✨Make sure you have the Launcher before starting✨
-### Over 6,000 users use the Launcher
+### Over 10,000 users use the Launcher
 
 ### 🔴 LIVE: Aimbot Internation 2024 - Win $1,000s
 Prepare your custom code and submit it for the aimbot internation which ends later this year. Work alone or solo. Check out the following videos to learn more.
